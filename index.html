@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coming Soon</title>
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .container {
+        padding: 20px;
+        max-width: 600px;
+        z-index: 2;
+      }
+
+      h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        color: #f0f0f0;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        color: #cccccc;
+      }
+
+      .container h1::after {
+        content: "";
+        display: block;
+        width: 100px;
+        margin: 10px auto;
+        border-bottom: 2px solid #cccccc;
+      }
+
+      /* Center the Lottie animation */
+      .lottie-container {
+        margin-top: 20px;
+      }
+
+      /* Optional: Add animation for the entry effect */
+      .lottie-container,
+      .container {
+        animation: fadeIn 2s ease-in;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+    <!-- Add the Lottie library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Coming Soon</h1>
+      <p>"Recycle Today for a Greener Tomorrow"</p>
+      <!-- Lottie animation container -->
+      <div class="lottie-container" id="lottie"></div>
+    </div>
+
+    <script>
+      // Load Lottie animation
+      //   var animation = lottie.loadAnimation({
+      //     container: document.getElementById("lottie"), // the container where the animation will render
+      //     renderer: "svg",
+      //     loop: true,
+      //     autoplay: true,
+      //     path: "https://assets5.lottiefiles.com/packages/lf20_jcikwtux.json", // Lottie animation URL
+      //   });
+
+      // Load Lottie animation
+      var animation = lottie.loadAnimation({
+        container: document.getElementById("lottie"), // the container where the animation will render
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "https://assets8.lottiefiles.com/packages/lf20_jcikwtux.json", // Under Construction animation URL
+      });
+    </script>
+  </body>
+</html>
